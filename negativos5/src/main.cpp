@@ -6,7 +6,17 @@ const int SIZE = 5; // input size.
 
 int main(void)
 {
-    // TODO: Adicione aqui seu código.
+    int number;
+    int totalNegatives = 0;
+
+    for(int i = 0; i < 4; i++)
+    {
+        cin >> number; 
+
+        if(number < 0) totalNegatives++;
+    }
+
+    cout << totalNegatives;
 
     return 0;
 }
