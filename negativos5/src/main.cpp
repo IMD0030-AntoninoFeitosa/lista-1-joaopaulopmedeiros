@@ -9,7 +9,7 @@ int main(void)
     int number;
     int totalNegatives = 0;
 
-    for(int i = 0; i < 4; i++)
+    for(int i = 0; i <= 4; i++)
     {
         cin >> number; 
 
