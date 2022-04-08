@@ -1,3 +1,4 @@
+#include <iostream>
 #include "function.h"
 
 /*! 
@@ -12,8 +13,27 @@
 
 std::pair<int,int> min_max( int V[], size_t n )
 {
-    // TODO: Adicione aqui sua solução.
 
-    // TODO: Isso é apenas um STUB. Substitua com seu retorno correto.
-    return { -1, -1 };
+    int minPos = 0;
+    int minValue = 0;
+
+    int maxPos = 0;
+    int maxValue = 0;
+
+    int length = n / sizeof V[0];
+
+    for(int i = 0; i < length; i++)
+    {
+        if(minValue >= V[i]) {
+            minValue = V[i];
+            minPos = i;
+        }
+
+        if(maxValue >= V[i]) {
+            maxValue = V[i];
+            maxPos = i;
+        }
+    }
+
+    return { minPos, maxPos };
 }
