@@ -10,7 +10,26 @@ using std::endl;
 
 int main( void )
 {
-    // TODO: Adicione seu código aqui. 
+    int m = 0;
+    int n = 0;
+    int amount = 0;
+
+    cin >> m;
+    cin >> n;
+
+    if(n > 0) {
+        for(int i = m; i < (m + n); i++)
+        {
+            amount += i;
+        }
+    } else {
+        for(int i = m; i > (m + n); i--)
+        {
+            amount += i;
+        }
+    }
+
+    cout << amount;
 
     return 0;
 }
