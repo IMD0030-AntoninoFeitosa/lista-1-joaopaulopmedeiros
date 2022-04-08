@@ -29,7 +29,7 @@ std::pair<int,int> min_max( int V[], size_t n )
             minPos = i;
         }
 
-        if(maxValue >= V[i]) {
+        if(maxValue <= V[i]) {
             maxValue = V[i];
             maxPos = i;
         }
