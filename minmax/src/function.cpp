@@ -15,8 +15,8 @@ std::pair<int,int> min_max( int V[], size_t n )
 {
 
     int minPos = 0;
-    int minValue = 0;
-
+    int minValue = V[0];
+    
     int maxPos = 0;
     int maxValue = 0;
 
@@ -24,16 +24,21 @@ std::pair<int,int> min_max( int V[], size_t n )
 
     for(int i = 0; i < length; i++)
     {
-        if(minValue >= V[i]) {
+        if(minValue > V[i]) {
             minValue = V[i];
             minPos = i;
         }
-
+        
         if(maxValue <= V[i]) {
             maxValue = V[i];
             maxPos = i;
         }
     }
 
-    return { minPos, maxPos };
+    pair<int, int> result;
+
+    result.first = minPos;
+    result.second = maxPos;
+
+    return result;
 }
