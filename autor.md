@@ -3,7 +3,7 @@
 Preencha os dados abaixo para identificar a autoria do trabalho.
 
 - Nome: João Paulo Pereira de Medeiros
-- Email: joaopaulopmedeiros
+- Email: joaopaulopmedeiros@gmail.com
 - Turma: 03
 
 # Questões Finalizadas
