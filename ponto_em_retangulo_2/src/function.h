@@ -1,4 +1,3 @@
-#ifndef FUNCTION_H
 #define FUNCTION_H
 #include <array>
 using std::array;
@@ -18,5 +17,3 @@ struct Ponto {
 enum location_t :int { INSIDE=0, BORDER=1, OUTSIDE=2 };
 
 location_t pt_in_rect( const Ponto&, const Ponto&, const Ponto& );
-
-#endif
